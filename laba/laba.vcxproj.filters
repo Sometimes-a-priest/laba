@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs">
+      <UniqueIdentifier>{aa2af926-75ed-4dc1-953f-0c42ebdda58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs\arrayLibs">
+      <UniqueIdentifier>{db05dde4-35f6-4715-b2f3-4f85a8a4f38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs\SetLibs">
+      <UniqueIdentifier>{ec117133-668d-4c05-8348-ee916be9ca1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs\SetLibs\bitSetLib">
+      <UniqueIdentifier>{d212c11e-83ef-4f69-b398-d6befd0c1d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs\SetLibs\arraySetLib">
+      <UniqueIdentifier>{04bdd578-6013-4d92-9d2b-80112b20169f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Libs\geoLibs">
+      <UniqueIdentifier>{b2d6845d-9fb7-4027-a7d6-5c2f156544ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="arrayLib.c">
+      <Filter>Исходные файлы\Libs\arrayLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="bitSet.c">
+      <Filter>Исходные файлы\Libs\SetLibs\bitSetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="unsortArraySetLib.c">
+      <Filter>Исходные файлы\Libs\SetLibs\arraySetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="sortArraySetLib.c">
+      <Filter>Исходные файлы\Libs\SetLibs\arraySetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.c">
+      <Filter>Исходные файлы\Libs\geoLibs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arrayLib.h">
+      <Filter>Исходные файлы\Libs\arrayLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="bitSet.h">
+      <Filter>Исходные файлы\Libs\SetLibs\bitSetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="unsortArraySetLib.h">
+      <Filter>Исходные файлы\Libs\SetLibs\arraySetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="sortArraySetLib.h">
+      <Filter>Исходные файлы\Libs\SetLibs\arraySetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Исходные файлы\Libs\geoLibs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

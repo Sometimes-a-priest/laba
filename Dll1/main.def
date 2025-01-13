@@ -1,0 +1,4 @@
+LIBRARY "dll_vscode"
+EXPORTS
+add
+sub
