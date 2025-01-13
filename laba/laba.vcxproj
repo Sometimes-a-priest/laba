@@ -20,17 +20,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="arrayLib.c" />
-    <ClCompile Include="sortArraySetLib.c" />
-    <ClCompile Include="unsortArraySetLib.c" />
     <ClCompile Include="bitSet.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="matrix.c" />
+    <ClCompile Include="sortArraySetLib.c" />
+    <ClCompile Include="unsortArraySetLib.c" />
     <ClCompile Include="vector.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayLib.h" />
+    <ClInclude Include="bitSet.h" />
+    <ClInclude Include="matrix.h" />
     <ClInclude Include="sortArraySetLib.h" />
     <ClInclude Include="unsortArraySetLib.h" />
-    <ClInclude Include="bitSet.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
