@@ -2,6 +2,9 @@
 #ifndef INC_ARRAYLIB_H
 #define INC_ARRAYLIB_H
 #include < stddef.h >
+
+void swapInt(int* a, int* b);
+
 // ввод массива длинной n
 void inputArray(int* const array, const size_t n);
 
@@ -27,7 +30,6 @@ size_t binarySearch(const int* a, const size_t n, int x);
 // в массив data размера n на позицию pos
 void insert(int* a, size_t* n, const size_t pos, const int value);
 
-
 // возвращает позицию первого элемента равного или большего x
 // в отсортированном массиве a размера n
 // при отсутствии такого элемента возвращает n
@@ -36,5 +38,11 @@ size_t binarySearchMoreOrEqual(const int* a, const size_t n, int x);
 // удаление из массива data размера n элемента на позиции pos
 // с сохранением порядка оставшихся элементов
 void deleteByPosSaveOrder(int* a, size_t* n, const size_t pos);
+
+//сортировка вставками
+void insertionSort(int* a, const size_t size);
+
+// сортировка выбором
+void selectionSort(int* a, const int size);
 
 # endif

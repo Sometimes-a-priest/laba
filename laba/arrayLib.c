@@ -6,6 +6,12 @@
 #include "arrayLib.h"
 
 
+void swapInt(int* a, int* b) {
+	int a_copy = *a;
+	*a = *b;
+	*b = a_copy;
+}
+
 void inputArray(int* const array, const size_t n) {
 	for (size_t i = 0; i < n; i++) {
 		scanf("%d", &array[i]);
@@ -105,3 +111,24 @@ void deleteByPosSaveOrder(int* a, size_t* n, const size_t pos) {
 	(*n) --;
 }
 
+void insertionSort(int* a, const size_t size) {
+	for (size_t i = 1; i < size; i++) {
+		int t = a[i];
+		int j = i;
+		while (j > 0 && a[j - 1] > t) {
+			a[j] = a[j - 1];
+			j--;
+		}
+		a[j] = t;
+	}
+}
+
+void selectionSort(int* a, const int size) {
+	for (int i = 0; i < size - 1; i++) {
+		int minPos = i;
+		for (int j = i + 1; j < size; j++)
+			if (a[j] < a[minPos])
+				minPos = j;
+		swapInt(&a[i], &a[minPos]);
+	}
+}
