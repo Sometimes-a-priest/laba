@@ -24,6 +24,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="matrix.c" />
     <ClCompile Include="sortArraySetLib.c" />
+    <ClCompile Include="string_.c" />
     <ClCompile Include="unsortArraySetLib.c" />
     <ClCompile Include="vector.c" />
   </ItemGroup>
@@ -32,6 +33,7 @@
     <ClInclude Include="bitSet.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="sortArraySetLib.h" />
+    <ClInclude Include="string_.h" />
     <ClInclude Include="unsortArraySetLib.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>

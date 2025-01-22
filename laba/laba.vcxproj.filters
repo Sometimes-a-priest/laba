@@ -31,6 +31,9 @@
     <Filter Include="Исходные файлы\Libs\data_struct\matrix">
       <UniqueIdentifier>{d1a4670b-06c0-4ded-89c0-2d674216caa3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Libs\string_">
+      <UniqueIdentifier>{146201c2-7b10-42ef-b037-48ef742620aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -54,6 +57,9 @@
     <ClCompile Include="matrix.c">
       <Filter>Исходные файлы\Libs\data_struct\matrix</Filter>
     </ClCompile>
+    <ClCompile Include="string_.c">
+      <Filter>Исходные файлы\Libs\string_</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayLib.h">
@@ -73,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="matrix.h">
       <Filter>Исходные файлы\Libs\data_struct\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="string_.h">
+      <Filter>Исходные файлы\Libs\string_</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
