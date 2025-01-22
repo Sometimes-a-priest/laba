@@ -11,9 +11,6 @@
 #include "arrayLib.h"
 #include "string_.h"
 
-int moreX(int x) {
-	return !isspace(x);
-}
 
 int main() {
 }

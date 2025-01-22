@@ -70,29 +70,27 @@ char* copy(const char* beginSource, const char* endSource,
 
 char* copyIf(char* beginSource, const char* endSource,
 	char* beginDestination, int (*f)(int)) {
-	size_t i = 0;
-	while (beginSource < endSource) {
 
+	while (beginSource < endSource) {
 		if (f(*beginSource)) {
-			beginDestination[i] = *beginSource;
-			i++;
+			memcpy(beginDestination, beginSource, sizeof(char));
+			beginDestination++;
 		}
 		beginSource++;
 	}
 
-	return beginSource + 1;
+	return beginDestination;
 }
 
 char* copyIfReverse(char* rbeginSource, const char* rendSource,
 	char* beginDestination, int (*f)(int)) {
-	size_t i = 0;
 
 	while (rendSource <= rbeginSource) {
 		if (f(*rbeginSource)) {
-			beginDestination[i] = *rbeginSource;
-			i++;
+			memcpy(beginDestination, rbeginSource, sizeof(char));
+			beginDestination++;
 		}
 		rbeginSource--;
 	}
-	return *rbeginSource;
+	return *beginDestination;
 }
